@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this line is for title (this will be displayed on the tabline ) -->
     <title>Email Newsletter</title>
+    <!-- this line will create a path where href is for path for css
+     shortcut is link:css   -->
+    <link rel="stylesheet" href="./styles/style.CSS" type="text/CSS"/>
+    <!-- font awesome is an website for icons  -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous"   
+    referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <nav>
+        <div class="container">
+            <div class="branding">
+                <!-- as it is ancker tag we use href and we give the value as # as we want 
+                     it to come to the same page    -->
+                <a href ="#">
+                    <i class="fas fa-laptop-code"></i><span>Web Development</span></a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Affordable Learning SolutionsFor Web Development And Careers</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum illo,
+               nihil, doloremque vitae pariatur veritatis ratione accusamus itaque numquam 
+               libero maiores sapiente sit. Delectus praesentium eos enim ut saepe non esse
+               impedit dolorum accusamus at id itaque, officiis quaerat, harum, quod ducimus 
+               deleniti! Dignissimos eligendi quos nostrum itaque quisquam veritatis.</p>
+        </div>
+    </header>
+    <!-- in html we use - in className but in java we use camelcase-->
+    <section class = "news-letter">
+        <div class="container">
+            <h2>Get our Email Newsletter</h2>
+            <form action="#">
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email address"/>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section class = "cards">
+        <div class="container">
+            <div class="card">
+                <i class="fas fa-signal fa-5x"></i>
+                <h3>Enhance your skills</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Perspiciatis exercitationem mollitia at qui atque placeat 
+                   perferendis, quo omnis asperiores, consectetur temporibus 
+                   ratione quisquam alias! Vitae tempora magnam eius exercitationem velit.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-signal fa-5x"></i>
+                <h3>Enhance your skills</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Perspiciatis exercitationem mollitia at qui atque placeat 
+                   perferendis, quo omnis asperiores, consectetur temporibus 
+                   ratione quisquam alias! Vitae tempora magnam eius exercitationem velit.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-signal fa-5x"></i>
+                <h3>Enhance your skills</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Perspiciatis exercitationem mollitia at qui atque placeat 
+                   perferendis, quo omnis asperiores, consectetur temporibus 
+                   ratione quisquam alias! Vitae tempora magnam eius exercitationem velit.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Prerana copyright<sup>&copy</sup> ;  2021</p>
+    </footer>
 </body>
 </html>
